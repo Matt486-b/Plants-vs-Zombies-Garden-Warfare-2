@@ -1,8 +1,7 @@
 /* Estilos generales */
 body {
-    /* Modo claro (por defecto) */
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,10 +9,9 @@ body {
 
 /* Modo oscuro */
 body.modo-oscuro {
-  background-color: black;
-  color: white;
+    background-color: gray;
+    color: white;
 }
-
 
 /* Estilo del encabezado */
 header {
@@ -29,10 +27,13 @@ nav ul {
     padding: 0;
     text-align: center;
     background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 10px;
 }
 
@@ -51,13 +52,43 @@ nav ul li a:hover {
 section {
     margin: 20px;
     padding: 20px;
-    background-color: #111;
+    background-color: #aaa;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+section.modo-oscuro {
+    background-color: #111;
 }
 
 /* Títulos */
 h1, h2 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Imágenes adaptables */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividad: tabletas y móviles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
 }
