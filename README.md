@@ -1,113 +1,51 @@
-comandos de git
-git init: inicia el proyecto git
-git add añadir archivos al proyecto git
-git status checkea que archivos estan en el proyecto
-git config user.email "correo aquí"
-git config user.name "nombre aquí"
-git commit -m "Nombre de version"
-git branch -M main 
-git branch -M "subrama"
-git remote add origin "Link de github"
+# Rama1 se crea el sitio web
+
+# Rama2 se pone los estilos y el archivo Styles.css
+
+# Rama3 se pone el archivo script.js para hacer un JavaScript
+
+# Rama4 se tendría que poner desarrollo y imágenes pero falla asi que se pone en la siguiente
+
+# Rama5 se desarrolla lo de la Rama4, el README.md y accesibilidad de móvil y otros tipos de pantallas
+
+---
+
+#  PvZ GW2 - Sitio Web
+
+Este es un proyecto de sitio web dedicado a *Plants vs Zombies: Garden Warfare 2*. Contiene contenido descriptivo, navegación simple, estilos personalizados y soporte para modo oscuro y diseño responsivo.
+
+---
+
+##  Comandos Básicos de Git
+
+```bash
+# Inicializa un repositorio Git
+git init
+
+# Añade archivos al área de staging
+git add .
+
+# Verifica el estado del repositorio
+git status
+
+# Configura tu correo y nombre
+git config user.email "correo@ejemplo.com"
+git config user.name "Tu Nombre"
+
+# Crea un commit con un mensaje
+git commit -m "Mensaje del commit"
+
+# Crea la rama principal
+git branch -M main
+
+# Crea una subrama (opcional)
+git branch -M "nombre-de-la-subrama"
+
+# Conecta con el repositorio remoto
+git remote add origin "https://github.com/usuario/repositorio.git"
+
+# Sube el contenido a la rama principal
 git push -u origin main
-git push -u origin "subrama"
 
-// script.js
-function toggleModoOscuro() {
-  document.body.classList.toggle('modo-oscuro');
-}
-
-Estilos
-/* Estilos generales */
-body {
-    background-color: white;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Modo oscuro */
-body.modo-oscuro {
-    background-color: gray;
-    color: white;
-}
-
-/* Estilo del encabezado */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* Navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    background-color: #333;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 10px;
-}
-
-nav ul li a {
-    color: #00ffcc;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-/* Estilos para secciones */
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #aaa;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-section.modo-oscuro {
-    background-color: #111;
-}
-
-/* Títulos */
-h1, h2 {
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-}
-
-/* Imágenes adaptables */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Responsividad: tabletas y móviles */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
-}
+# Sube una subrama
+git push -u origin "nombre-de-la-subrama"
