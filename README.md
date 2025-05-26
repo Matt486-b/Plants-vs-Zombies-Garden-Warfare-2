@@ -4,25 +4,25 @@
 
 # Rama3 se pone el archivo script.js para hacer un JavaScript
 
-# Rama4 se tendría que poner desarrollo y imágenes pero falla asi que se pone en la siguiente
+# Rama4 se tendr a que poner desarrollo y im genes pero falla asi que se pone en la siguiente
 
-# Rama5 se desarrolla lo de la Rama4, el README.md y accesibilidad de móvil y otros tipos de pantallas
+# Rama5 se desarrolla lo de la Rama4, el README.md y accesibilidad de m vil y otros tipos de pantallas
 
 ---
 
 #  PvZ GW2 - Sitio Web
 
-Este es un proyecto de sitio web dedicado a *Plants vs Zombies: Garden Warfare 2*. Contiene contenido descriptivo, navegación simple, estilos personalizados y soporte para modo oscuro y diseño responsivo.
+Este es un proyecto de sitio web dedicado a *Plants vs Zombies: Garden Warfare 2*. Contiene contenido descriptivo, navegaci n simple, estilos personalizados y soporte para modo oscuro y dise o responsivo.
 
 ---
 
-##  Comandos Básicos de Git
+##  Comandos B sicos de Git
 
 ```bash
 # Inicializa un repositorio Git
 git init
 
-# Añade archivos al área de staging
+# A ade archivos al  rea de staging
 git add .
 
 # Verifica el estado del repositorio
